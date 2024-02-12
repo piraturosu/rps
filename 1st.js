@@ -27,3 +27,7 @@ function rockPaperScissor(p1) {
 } 
 
 rockPaperScissor()
+
+function profi () {
+  console.log('profesionisti')
+}
