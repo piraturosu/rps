@@ -8,12 +8,12 @@ const OPTIONS = {
   function rockPaperScissor(playerChoice) {
     if (typeof playerChoice !== 'number' || !Number.isInteger(playerChoice)) {
       console.error('Only numbers allowed');
-      return true;
+      return false;
     }
 
     if (playerChoice < 0 || playerChoice >= optionKeys.length) {
       console.error('Numbers can be only 0, 1 and 2');
-      return true;
+      return false;
     }
 
     const computerChoice = Math.floor(Math.random() * optionKeys.length);
@@ -36,12 +36,12 @@ const OPTIONS = {
       if (computerChoice === OPTIONS.ROCK) console.log('computer wins!');
       else console.log('you win!');
     }
-    return false;
+    return true;
   }
 
   function test(param) {
     const cond = rockPaperScissor(param);
-    if(cond) alert('Function failed');
+    if(!cond) alert('Function failed');
   }
 
   test();
