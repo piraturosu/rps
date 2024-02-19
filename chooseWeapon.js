@@ -1,9 +1,14 @@
-const btn = document.getElementById("choose-btn");
-const inputElement = document.getElementById("weapon");
-const form = document.getElementById
+const battleResult = document.createElement('p');
+battleResult.setAttribute('id', 'battle-result');
+const battleDiv = document.getElementById('result');
 
-function logInputValue() {
-  btn.addEventListener('click', console.log('click'));
-  console.log(inputElement.value);
+function battle(buton) {
+  let playerWeapon = optionKeys[computerChoice];
+  let butonValue = Number(buton.value);
+  rockPaperScissor(butonValue);
+  battleResult.innerText = `You chose:\t\t${playerChoiceName}\nComputer chose:\t${computerChoiceName}`;
+  battleDiv.appendChild(battleResult);
+  battleDiv.appendChild(battleConclusion);
+  battleDiv.appendChild(playerScoreText);
+  battleDiv.appendChild(computerScoreText);
 }
-chooseWeapon()

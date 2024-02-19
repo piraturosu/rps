@@ -10,15 +10,15 @@
       <h1>Rock, Paper, Scissors</h1>
     </header>
     <div>
-      <form>
-        <label>
-          <h2>Choose your option: 1- Rock 2- Paper 3- Scissors</h2>
-          <input id="weapon"/>
-          <button id="choose-btn" onclick="logInputValue()">Choose</button>
-        </label>
-      </form>
+      <h2>Choose your weapon:</h2>
+      <button id="choose-rock" value="0" onclick="battle(this)">Rock</button>
+      <button id="choose-paper" value="1" onclick="battle(this)">Paper</button>
+      <button id="choose-scissors" value="2" onclick="battle(this)">
+        Scissors
+      </button>
     </div>
+    <div id="result"></di>
   </body>
-  <script src="rpsScript.js"></script>
+  <script src="5.js"></script>
   <script src="chooseWeapon.js"></script>
 </html>

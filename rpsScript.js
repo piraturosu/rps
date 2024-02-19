@@ -44,7 +44,6 @@ function test(param) {
   if (!cond) alert('Function failed');
 }
 
-
 // test();
 // test(null);
 // test(undefined);
