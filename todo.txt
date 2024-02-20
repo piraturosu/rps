@@ -1,3 +1,2 @@
-1. miro app workflow. defineste si destructureaza pas cu pas cum functioneaza aplicatia
-2. impartit pe functii ca sa poata tina starea scorului
-3. reset score button
+afiseaza o eroare daca nu merge functia game
+reset score button
