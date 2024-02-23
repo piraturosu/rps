@@ -1,2 +1,4 @@
+afiseaza "Computer chose: weapon , Player chose: weapon"
+
 afiseaza o eroare daca nu merge functia game
 reset score button

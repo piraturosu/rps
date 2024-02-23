@@ -26,6 +26,7 @@ function rockPaperScissor(playerChoice) {
   const computerChoice = Math.floor(Math.random() * optionKeys.length);
   const playerChoiceName = optionKeys[playerChoice];
   const computerChoiceName = optionKeys[computerChoice];
+
   console.log(
     `Computer chose\t${computerChoiceName}\nYou chose\t\t${playerChoiceName}`
   );
