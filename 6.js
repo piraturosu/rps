@@ -4,6 +4,7 @@ const GAME_RESULT = {
   WIN_COMPUTER: 2,
 };
 const resultKeys = Object.keys(GAME_RESULT);
+let message2;
 
 const OPTIONS = {
   ROCK: 0,
@@ -27,9 +28,7 @@ function rockPaperScissor(playerChoice) {
   const playerChoiceName = optionKeys[playerChoice];
   const computerChoiceName = optionKeys[computerChoice];
 
-  console.log(
-    `Computer chose\t${computerChoiceName}\nYou chose\t\t${playerChoiceName}`
-  );
+  message2 = `Computer chose\t${computerChoiceName}\nYou chose\t\t${playerChoiceName}`;
 
   if (playerChoice === computerChoice) {
     return GAME_RESULT.DRAW;
